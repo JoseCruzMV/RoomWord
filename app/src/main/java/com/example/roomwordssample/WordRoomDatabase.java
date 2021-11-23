@@ -51,7 +51,7 @@ public abstract class WordRoomDatabase extends RoomDatabase {
 
 
         @Override
-        protected Void doInBackground(Void... params) {
+        protected Void doInBackground(final Void... params) {
             mDao.deleteAll();
 
             for (int i = 0; i <= words.length - 1; i++) {
